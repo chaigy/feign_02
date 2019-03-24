@@ -11,7 +11,7 @@ public class MemberController {
 	private String port;
 	
 	@RequestMapping("/member")
-	public String getMember() {
-		return "我是member提供服务::::"+port;
+	public String getMember(String name) {
+		return "我是member提供服务::::"+port+".."+name;
 	}
 }

@@ -13,7 +13,7 @@ public class OrderController {
 	private MemberServerImpl se;
 	
 	@RequestMapping("/get")
-	public String get() {
-		return se.getMember();
+	public String get(String name) {
+		return se.getMember(name);
 	}
 }
